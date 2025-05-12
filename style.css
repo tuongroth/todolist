@@ -1,0 +1,106 @@
+  *
+{margin: 0;
+Padding: 0;
+Font-size: 'Poppins', san-serif;
+Box-sizing: border-box;
+}
+
+.container
+{
+Width:100%;
+Min-height: 100vh;
+Background: linear-gradient(135deg, #153677, #4e085f);
+Padding: 10px;}
+
+.todo-app{
+Width:100%;
+Max-width: 540px;
+Background: #fff;
+Margin: 100px auto 20px;
+Padding: 40px 30px 70px;
+Border-radius: 10px; }
+
+.todo-app h2 
+{color: #002765;
+Display: flex;
+Align-items: center;
+Margin-bottom: 20px;}
+
+.todo-app h2 img
+{ width: 30px;
+  Margin-left: 10px;}
+
+.row
+{display: flex;
+Align-items: center;
+Justify-content: space-between;
+Background: #ededf0;
+Margin-bottom: 25px;
+Padding-left: 25px;
+Border-radius: 30px;}
+
+input
+{
+Flex: 1;
+Border: none;
+Outline: none;
+Background: transparent;
+Padding: 10px; 
+Font-weight: 14px;}
+
+button
+{ border: none;
+Outline: none;
+Padding: 16px 50px;
+Background: #ff5945;
+Color: #fff; 
+Font-size: 16px; 
+Cursor: pointer; 
+Border-radius: 40px;} 
+
+ul li
+{
+List-style: none;
+Font-size: 17px;
+User-select: none;
+Cursor: pointer; 
+Padding: 12px 8px 12px 50px;
+ Position: relative;
+}
+
+ul li::before
+{content: '';
+Position: absolute;
+Height: 28px; 
+Width: 28px; 
+Border-radius: 50%;
+background-image: url("https://drrdigitalmarketing.com/wp-content/uploads/2024/01/unchecked.png");
+Background-size: cover; 
+Background-position: center;
+Top: 12px; 
+Left: 8px;
+}
+ul li.checked 
+{color: #555 ;
+Text-decoration: line-through;
+ }
+
+ ul li span
+{position:absolute;
+Top:  5px;
+Right: 0;
+Width: 40px;
+Height: 40px;
+Font-size: 22px;
+Color: #555;
+font-weight: 40px;
+Text-align: center;
+border-radius: 50%;
+}
+ul li span:hover{
+ background:  #ededf0;
+}
+
+
+ul li.checked::before
+{background-image: url("https://drrdigitalmarketing.com/wp-content/uploads/2024/01/checked.png");}
