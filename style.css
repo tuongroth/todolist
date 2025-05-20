@@ -1,4 +1,4 @@
-  ** {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -79,7 +79,7 @@ ul li::before {
   height: 28px;
   width: 28px;
   border-radius: 50%;
-  background-image: url("https://drrdigitalmarketing.com/wp-content/uploads/2024/01/unchecked.png");
+  background-image: url("./unchecked.png");
   background-size: cover;
   background-position: center;
   top: 12px;
@@ -109,7 +109,7 @@ ul li span:hover {
 }
 
 ul li.checked::before {
-  background-image: url("https://drrdigitalmarketing.com/wp-content/uploads/2024/01/checked.png");
+  background-image: url("./checked.png");
 }
 
 /* Responsive Media Queries */
