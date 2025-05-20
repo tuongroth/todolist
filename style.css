@@ -1,106 +1,144 @@
-  *
-{margin: 0;
-Padding: 0;
-Font-size: 'Poppins', san-serif;
-Box-sizing: border-box;
+  ** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.container
-{
-Width:100%;
-Min-height: 100vh;
-Background: linear-gradient(135deg, #153677, #4e085f);
-Padding: 10px;}
-
-.todo-app{
-Width:100%;
-Max-width: 540px;
-Background: #fff;
-Margin: 100px auto 20px;
-Padding: 40px 30px 70px;
-Border-radius: 10px; }
-
-.todo-app h2 
-{color: #002765;
-Display: flex;
-Align-items: center;
-Margin-bottom: 20px;}
-
-.todo-app h2 img
-{ width: 30px;
-  Margin-left: 10px;}
-
-.row
-{display: flex;
-Align-items: center;
-Justify-content: space-between;
-Background: #ededf0;
-Margin-bottom: 25px;
-Padding-left: 25px;
-Border-radius: 30px;}
-
-input
-{
-Flex: 1;
-Border: none;
-Outline: none;
-Background: transparent;
-Padding: 10px; 
-Font-weight: 14px;}
-
-button
-{ border: none;
-Outline: none;
-Padding: 16px 50px;
-Background: #ff5945;
-Color: #fff; 
-Font-size: 16px; 
-Cursor: pointer; 
-Border-radius: 40px;} 
-
-ul li
-{
-List-style: none;
-Font-size: 17px;
-User-select: none;
-Cursor: pointer; 
-Padding: 12px 8px 12px 50px;
- Position: relative;
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
 }
 
-ul li::before
-{content: '';
-Position: absolute;
-Height: 28px; 
-Width: 28px; 
-Border-radius: 50%;
-background-image: url("https://drrdigitalmarketing.com/wp-content/uploads/2024/01/unchecked.png");
-Background-size: cover; 
-Background-position: center;
-Top: 12px; 
-Left: 8px;
-}
-ul li.checked 
-{color: #555 ;
-Text-decoration: line-through;
- }
-
- ul li span
-{position:absolute;
-Top:  5px;
-Right: 0;
-Width: 40px;
-Height: 40px;
-Font-size: 22px;
-Color: #555;
-font-weight: 40px;
-Text-align: center;
-border-radius: 50%;
-}
-ul li span:hover{
- background:  #ededf0;
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
 }
 
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-ul li.checked::before
-{background-image: url("https://drrdigitalmarketing.com/wp-content/uploads/2024/01/checked.png");}
+.todo-app h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ededf0;
+  margin-bottom: 25px;
+  padding-left: 25px;
+  border-radius: 30px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  user-select: none;
+  cursor: pointer;
+  padding: 12px 8px 12px 50px;
+  position: relative;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url("https://drrdigitalmarketing.com/wp-content/uploads/2024/01/unchecked.png");
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li span {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #ededf0;
+}
+
+ul li.checked::before {
+  background-image: url("https://drrdigitalmarketing.com/wp-content/uploads/2024/01/checked.png");
+}
+
+/* Responsive Media Queries */
+@media (max-width: 600px) {
+  .todo-app {
+    margin: 50px 10px 20px;
+    padding: 30px 20px 50px;
+  }
+
+  button {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+
+  ul li {
+    font-size: 15px;
+    padding-left: 40px;
+  }
+
+  ul li::before {
+    height: 24px;
+    width: 24px;
+    top: 10px;
+    left: 5px;
+  }
+
+  ul li span {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+}
